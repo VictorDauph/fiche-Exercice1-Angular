@@ -1,0 +1,8 @@
+<div class="user-card">
+    <h3>{{ user.name }}</h3>
+    <p>Email : {{ user.email }}</p>
+    <p [class.active]="isActive">Statut : {{ isActive ? 'Actif' : 'Inactif' }}</p>
+    <button (click)="onToggleActive()">
+        {{ isActive ? 'Désactiver' : 'Activer' }}
+    </button>
+</div>
